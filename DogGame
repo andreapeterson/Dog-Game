@@ -1,0 +1,48 @@
+print('''
+                          ;\ 
+                            |' \ 
+         _                  ; : ; 
+        / `-.              /: : | 
+       |  ,-.`-.          ,': : | 
+       \  :  `. `.       ,'-. : | 
+        \ ;    ;  `-.__,'    `-.| 
+         \ ;   ;  :::  ,::'`:.  `. 
+          \ `-. :  `    :.    `.  \ 
+           \   \    ,   ;   ,:    (\ 
+            \   :., :.    ,'o)): ` `-. 
+           ,/,' ;' ,::"'`.`---'   `.  `-._ 
+         ,/  :  ; '"      `;'          ,--`. 
+        ;/   :; ;             ,:'     (   ,:) 
+          ,.,:.    ; ,:.,  ,-._ `.     \""'/ 
+          '::'     `:'`  ,'(  \`._____.-'"' 
+             ;,   ;  `.  `. `._`-.  \\ 
+             ;:.  ;:       `-._`-.\  \`. 
+              '`:. :        |' `. `\  ) \ 
+                 ` ;:       |    `--\__,' 
+                   '`      ,' 
+                        ,-' 
+''')
+print('Welcome to My Game of "Your Dog Got Loose Again"')
+print("Your Dog, Buster, Saw the Neighborhood Deer and Ran Away. Your Mission is to Find Him Before the Sun Goes Down") 
+
+
+choice1= input('You are running down the road and ran into a dead end. There are woods to the left and a house with a large backyard on the right. Where do you want to go? Type "left" or "right".\n').lower()
+
+if choice1 == "left":
+  choice2=input('You are now running through the woods screaming "Buster!". You run into a canal and see Buster across it. To get across, do you want to swim or use the kayak that is ashore? Type "swim" or "kayak".\n').lower()
+  if choice2 == "kayak":
+    choice3=input('Yay! You made it to the other side and finally got a hold of Buster. You are now wa... wait. What was that noise? You look towards where the noise is coming from and you see 3 bobcats ready to pounce. Should you stay still and hold your ground, run while holding Buster, or let go of Busters collar and run and hope he follows you? Type "stay", "run", or "leave buster".\n').lower()
+    if choice3== "stay":
+      print("Wow! You held your ground and the bobcats are more scared of you than you are of them. You and Buster made it back home for a well-deserved nights sleep.")
+    elif choice3== "run":
+      print("Well, you were too slow and you and Buster got eaten. Game over.")
+    elif choice3== "leave buster":
+      print("Oh no! Buster stayed and defended while you ran, and unfortunately Buster did not make it home. Game over.")     
+    else:
+      print("Game over.")
+  else:
+      print("Oh no! You got eaten by a gator. Game over.")
+    
+else:
+  print("Uh oh... these were not friendly neighbors and you got shot. Game over.")
+  
